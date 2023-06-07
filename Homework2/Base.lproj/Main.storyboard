@@ -1,73 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you guess my number?(between 1 - 6)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVU-Ci-6F4">
-                                <rect key="frame" x="33" y="127.99999999999999" width="327" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your guess here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LgB-Ia-sG6">
-                                <rect key="frame" x="112.00000000000001" y="198.33333333333334" width="169.33333333333337" height="34"/>
-                                <accessibility key="accessibilityConfiguration" hint="write your guess here">
-                                    <accessibilityTraits key="traits" none="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="isEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="dkm-Qa-zvu"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dra-Kg-hRB">
-                                <rect key="frame" x="133" y="332.33333333333331" width="127" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Try your luck!"/>
-                                <connections>
-                                    <action selector="guessNumberBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2r-i0-2Wu"/>
-                                </connections>
-                            </button>
-                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="gVU-Ci-6F4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="4JG-rd-nUw"/>
-                            <constraint firstItem="Dra-Kg-hRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dku-BO-7OS"/>
-                            <constraint firstItem="LgB-Ia-sG6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K8n-Cg-yZn"/>
-                            <constraint firstItem="Dra-Kg-hRB" firstAttribute="top" secondItem="LgB-Ia-sG6" secondAttribute="bottom" constant="100" id="Tkq-PX-uXM"/>
-                            <constraint firstItem="gVU-Ci-6F4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exq-OA-dJ0"/>
-                            <constraint firstItem="Dra-Kg-hRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDI-F7-GbR"/>
-                            <constraint firstItem="LgB-Ia-sG6" firstAttribute="top" secondItem="gVU-Ci-6F4" secondAttribute="bottom" constant="50" id="mZA-D8-kL7"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="buttonLabel" destination="Dra-Kg-hRB" id="2ig-rO-4qZ"/>
-                        <outlet property="editTextOutlet" destination="LgB-Ia-sG6" id="Lde-KS-S28"/>
-                        <outlet property="labelOutlet" destination="gVU-Ci-6F4" id="DYO-tZ-61f"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
